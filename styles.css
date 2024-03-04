@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: white;
+}
+
+.container {
+  max-height: 100vh;
+  margin: 3rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.desktop-img {
+  position: relative;
+  width: auto;
+  height: 600px;
+  border: 1px solid #222;
+  /* align-items: center; */
+}
+
+.front-card {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+}
+
+.back-card {
+  position: absolute;
+  top: 55%;
+  height: auto;
+  width: auto;
+  left: 20%;
+}
+
+#front-img {
+  position: relative;
+  width: auto;
+  height: 170px;
+}
+.back-img {
+  position: relative;
+  width: auto;
+  height: 170px;
+}
+
+#card-number {
+  font-size: x-large;
+  font-weight: lighter;
+  font-family: serif;
+  position: absolute;
+  top: 55%;
+  left: 23px;
+  color: #fff;
+  letter-spacing: 3.5px;
+}
+
+#front-card-name {
+  font-weight: lighter;
+  font-size: small;
+  text-transform: uppercase;
+  position: absolute;
+  top: 80%;
+  left: 20px;
+  color: #fff;
+}
+
+#expiry-date {
+  font-weight: lighter;
+  text-transform: uppercase;
+  position: absolute;
+  top: 80%;
+  right: 30px;
+  color: #fff;
+}
+
+#cvv-number {
+  font-weight: lighter;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 46%;
+  right: 42px;
+  color: #fff;
+  padding-bottom: 0.1rem;
+  margin-left: 25px;
+}
+
+#circle {
+  position: absolute;
+  background: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  top: 10%;
+  left: 6%;
+}
+
+#circle-2 {
+  position: absolute;
+  background: none;
+  border: 1px solid #fff;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  top: 17%;
+  left: 21%;
+}
+
+.form-div {
+  /* visibility: hidden; */
+  border: 2px solid #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  align-self: center;
+  margin-left: 7em;
+  position: relative;
+  visibility: visible;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: x-small;
+  text-transform: uppercase;
+}
+
+label p {
+  margin: 0;
+}
+
+.error-field {
+  display: none;
+  color: red;
+}
+
+.invalid {
+  display: inline-block;
+}
+
+input[type="number"] {
+  width: 3rem;
+}
+
+.space {
+  margin-bottom: 12px;
+}
+
+.submit-text {
+  position: relative;
+  width: 12em;
+  height: 25px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.submit-text-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  font-size: smaller;
+}
+
+.continue {
+  position: absolute;
+  top: 55%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  padding: 0 30px 30px 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.checkmark::after {
+  content: "\2713";
+  position: absolute;
+  left: 5.7rem;
+  top: -3.5rem;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #aaa;
+  background: rgba(123, 4, 207, 0.774);
+  border-radius: 50%;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding-top: 10px;
+}
+
+.thank-you {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+  /* margin-left: 2rem; */
+  text-align: center;
+  width: 15rem;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.continue button {
+  position: absolute;
+  width: 15em;
+  height: 15px;
+  margin-top: 4rem;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  left: 10%;
+  top: 20%;
+  padding-top: 3px;
+  padding-bottom: 20px;
+  padding-right: 1px;
+}
+
+.continue span {
+  margin-left: 1.8rem;
+}
+
+/* input:invalid {
+  border: 2px dashed red;
+} */
+
+/* input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+} */
+
+/* input:valid {
+  border: 2px solid black;
+} */

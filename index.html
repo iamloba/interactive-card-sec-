@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="desktop-img-div">
+        <img class="desktop-img" src="images/bg-main-desktop.png" alt="" />
+
+        <!-- start of front card section -->
+        <!-- <section class="front-img"> -->
+        <div class="front-card">
+          <img id="front-img" src="images/bg-card-front.png" alt="front-card" />
+          <span id="card-number">0000 0000 0000 0000</span>
+          <span id="front-card-name">Jane Appleseed</span>
+          <span id="expiry-date">00/00 </span>
+          <div id="circle"></div>
+          <div id="circle-2"></div>
+        </div>
+        <div class="back-card">
+          <img class="back-img" src="images/bg-card-back.png" alt="back-card" />
+          <span id="cvv-number">000</span>
+        </div>
+      </div>
+      <!-- </section> -->
+      <!-- end of front card section -->
+      <!-- start of input section -->
+      <div class="form-div">
+        <form action="" id="my-form">
+          <!-- card name-input -->
+          <div class="space">
+            <label for="input-class">CARDHOLDER NAME</label>
+            <input
+              type="text"
+              id="input-class"
+              name="cardholder name"
+              placeholder="e.g. Jane Appleseed"
+              size="24"
+            />
+            <p class="error-field">Name cannot be empty</p>
+          </div>
+          <!-- card number input -->
+          <div class="space">
+            <label for="input-number">Card Number</label>
+            <input
+              type="text"
+              id="input-number"
+              inputmode="numeric"
+              name="card number"
+              placeholder="e.g. 1234 5678 9123 0000"
+              size="24"
+            />
+            <p class="error-field">Number cannot be empty</p>
+          </div>
+          <div class="space">
+            <!-- month input -->
+            <div style="float: left; margin-right: 5px">
+              <label class="label" for="month-box">EXP.DATE</label>
+              <input
+                type="number"
+                id="month-box"
+                name="month"
+                placeholder="MM"
+              />
+              <p class="error-field">month cannot be empty</p>
+            </div>
+            <!--year-input  -->
+            <div style="float: left; margin-right: 10px">
+              <label class="label" for="year-box">(MM/YY)</label>
+              <input
+                type="number"
+                id="year-box"
+                name="year"
+                placeholder="YY"
+                required
+              />
+              <p class="error-field">year cannot be empty</p>
+            </div>
+            <!-- cvc -->
+            <div>
+              <label class="label" for="cvc-input-box">CVC</label>
+              <input
+                type="number"
+                id="cvc-input-box"
+                style="width: 7em"
+                name="cvc"
+                placeholder="e.g. 123"
+                required="required"
+              />
+              <p class="error-field">cvc cannot be empty</p>
+            </div>
+          </div>
+          <!-- </div> -->
+        </form>
+        <!-- <label class="submit-text" for="submit"></label> -->
+        <div class="submit-text">
+          <input
+            class="submit-text-box submit-btn"
+            type="submit"
+            value="Confirm"
+          />
+        </div>
+      </div>
+      <!-- end of form -->
+      <!-- Completed state start -->
+      <div class="continue hidden">
+        <div class="checkmark"></div>
+        <h1 class="thank-you">Thank you!</h1>
+        <span class="added-details">We've added your card details</span>
+        <div>
+          <button class="continue-btn">Continue</button>
+        </div>
+      </div>
+    </div>
+    <!-- <button class="sumbit-text">Confirm</button> -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <!-- <div class="callbutton">
+      <img class="button" src="images/bg-card-back.png" alt="" />
+      <span class="words">hello world</span>
+    </div> -->
+    <table>
+      <caption></caption>
+      <th></th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
